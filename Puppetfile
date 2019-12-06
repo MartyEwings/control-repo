@@ -18,11 +18,12 @@ mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-translate', '1.2.0'
 
 #Support Stuff
-mod 'puppetlabs-support_tasks'
+#mod 'puppetlabs-support_tasks'
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-thundering_herd_resolver', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
-mod 'reidmv-taskplan', '0.2.0'
+mod 'support_tasks',
+  :git => 'https://github.com/MartyEwings/support-tasks.git'
 
 
 # home automation
