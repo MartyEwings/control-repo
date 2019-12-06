@@ -8,7 +8,7 @@ forge 'https://forge.puppet.com'
 mod 'abuxton/pdk' #latest
 mod 'puppetlabs-stdlib'#, '4.13.1' #install latest
 mod 'puppetlabs/resource_api' #
-mod 'puppetlabs-puppetserver_gem', '1.1.0' #dep. puppetlabs/resource_api
+mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
 #cd4pe and dependencies
 mod 'puppetlabs-cd4pe', '1.2.2'
 mod 'puppetlabs-concat', '5.3.0'
@@ -18,7 +18,7 @@ mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-translate', '1.2.0'
 
 #Support Stuff
-mod 'puppetlabs-support_tasks', '1.0.4'
+mod 'puppetlabs-support_tasks'
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-thundering_herd_resolver', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
@@ -32,9 +32,9 @@ mod 'martyewings-agent_run_with_tags', '1.0.0'
 
 # environment tools
 #mod 'ccin2p3-bolt', '0.2.0' #no osx support so usefull for master Setup
-mod 'puppetlabs-bootstrap', '0.5.0' #install PE agents with Bolt
+mod 'puppetlabs-bootstrap' #install PE agents with Bolt
 mod 'puppetlabs-puppet_agent' #manage and upgrade agents
-mod 'WhatsARanjit-node_manager', '0.7.1' #manage classification groups
+mod 'WhatsARanjit-node_manager' #manage classification groups
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
