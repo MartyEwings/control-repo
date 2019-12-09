@@ -16,6 +16,7 @@ mod 'puppetlabs-docker', '3.4.0'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-translate', '1.2.0'
+mod 'saz-sudo', '6.0.0'
 
 #Support Stuff
 #mod 'puppetlabs-support_tasks'
