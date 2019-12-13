@@ -10,7 +10,7 @@ mod 'puppetlabs-stdlib'#, '4.13.1' #install latest
 mod 'puppetlabs/resource_api' #
 mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
 #cd4pe and dependencies
-mod 'puppetlabs-cd4pe', '1.2.2'
+mod 'puppetlabs/cd4pe', :latest
 mod 'puppetlabs-concat', '5.3.0'
 mod 'puppetlabs-docker', '3.4.0'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
