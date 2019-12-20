@@ -10,7 +10,7 @@ mod 'puppetlabs-stdlib'#, '4.13.1' #install latest
 mod 'puppetlabs/resource_api' #
 mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
 #cd4pe and dependencies
-mod 'puppetlabs/cd4pe2', :latest
+mod 'puppetlabs/cd4pe', :latest
 mod 'puppetlabs-concat', '5.3.0'
 mod 'puppetlabs-docker', '3.4.0'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
@@ -19,12 +19,12 @@ mod 'puppetlabs-translate', '1.2.0'
 mod 'saz-sudo', '6.0.0'
 
 #Support Stuff
-#mod 'puppetlabs-support_tasks'
+mod 'puppetlabs-support_tasks'
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-thundering_herd_resolver', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
-mod 'support_tasks',
-  :git => 'https://github.com/MartyEwings/support-tasks.git'
+#mod 'support_tasks',
+ # :git => 'https://github.com/MartyEwings/support-tasks.git'
 
 
 # home automation
