@@ -24,7 +24,7 @@ mod 'puppetlabs-support_tasks'
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-thundering_herd_resolver', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
-mod 'puppetlabs-inifile', '4.1.0'
+mod 'puppet-yum', '4.1.0'
 #mod 'support_tasks',
  # :git => 'https://github.com/MartyEwings/support-tasks.git'
 
