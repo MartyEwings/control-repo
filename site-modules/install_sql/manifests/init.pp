@@ -6,7 +6,7 @@
 #   include install_sql
 class install_sql {
 
-  sqlserver_instance{ 'MSSQLSERVER':
+  sqlserver_instance{ 'MSSQLSERVER2':
     features              => ['SQL'],
     source                => "C:\\Users\\Administrator\\Downloads\\SQLServer2019-x64-ENU-Dev",
     sql_sysadmin_accounts => ['administrator']
@@ -14,6 +14,7 @@ class install_sql {
 
 sqlserver::login{'PROD: DB1':
 ensure           => present,
+instance         => 'MSSQLSERVER2'
 login            => 'DB1',
 login_type       => 'SQL_LOGIN',
 password         => 'marty123',
