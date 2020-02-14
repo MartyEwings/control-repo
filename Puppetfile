@@ -16,15 +16,14 @@ mod 'puppetlabs-docker', '3.4.0'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-translate', '1.2.0'
-mod 'saz-sudo', '6.0.0'
 mod 'puppetlabs-apache', '5.3.0'
 
 #Support Stuff
 mod 'puppetlabs-support_tasks'
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
-mod 'martyewings-thundering_herd_resolver', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
-mod 'puppet-yum', '4.1.0'
+mod 'puppetlabs-sqlserver', '2.6.2'
+mod 'martyewings-add_hosts_entry', '0.1.1'
 #mod 'support_tasks',
  # :git => 'https://github.com/MartyEwings/support-tasks.git'
 
