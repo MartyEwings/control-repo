@@ -14,7 +14,6 @@ class install_sql {
 
 sqlserver::login{'PROD: DB1':
 ensure           => present,
-instance         => 'MSSQLSERVER',
 login            => 'DB1',
 login_type       => 'SQL_LOGIN',
 password         => 'marty123',
