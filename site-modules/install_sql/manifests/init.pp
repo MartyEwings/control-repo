@@ -7,19 +7,9 @@
 class install_sql {
 
   sqlserver_instance{ 'MSSQLSERVER':
-  source                => "C:\\Users\\Administrator\\Downloads\\SQLServer2019-x64-ENU-Dev",
-  features              => ['SQL'],
-  security_mode         => 'SQL',
-  sa_pwd                => 'p@ssw0rd!!',
-  sql_sysadmin_accounts => ['myuser'],
-  install_switches      => {
-    'TCPENABLED'        => 1,
-    'SQLBACKUPDIR'      => 'C:\\MSSQLSERVER\\backupdir',
-    'SQLTEMPDBDIR'      => 'C:\\MSSQLSERVER\\tempdbdir',
-    'INSTALLSQLDATADIR' => 'C:\\MSSQLSERVER\\datadir',
-    'INSTANCEDIR'       => 'C:\\Program Files\\Microsoft SQL Server',
-    'INSTALLSHAREDDIR'  => 'C:\\Program Files\\Microsoft SQL Server',
-  }
+    features              => ['SQL'],
+    source                => "C:\\Users\\Administrator\\Downloads\\SQLServer2019-x64-ENU-Dev",
+    sql_sysadmin_accounts => ['administrator']
 }
 
 sqlserver::login{'PROD: DB1':
