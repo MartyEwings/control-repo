@@ -7,7 +7,7 @@
 class install_sql {
 
   sqlserver_instance{ 'MSSQLSERVER':
-  source                => 'C:\Users\Administrator\Downloads\SQLServer2019-x64-ENU-Dev',
+  source                => "C:\\Users\\Administrator\\Downloads\\SQLServer2019-x64-ENU-Dev",
   features              => ['SQL'],
   security_mode         => 'SQL',
   sa_pwd                => 'p@ssw0rd!!',
