@@ -8,7 +8,7 @@ class install_sql {
 
   sqlserver_instance{ 'MSSQLSERVER':
     features              => ['SQL'],
-    source                => "C:\\Users\\Administrator\\Downloads\\SQLServer2019-x64-ENU-Dev",
+    source                => "C:\\Users\\Administrator\\Downloads\\SQLEXPR_x64_ENU",
     sql_sysadmin_accounts => ['administrator']
 }
 
