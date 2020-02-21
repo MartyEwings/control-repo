@@ -1,2 +1,4 @@
 ---
 message: "This node is using common data"
+puppet_enterprise::master::code_manager::forge_settings:
+ forge_authorization: "test:test"
