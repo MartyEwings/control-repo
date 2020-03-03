@@ -24,6 +24,7 @@ mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
 mod 'martyewings-add_hosts_entry', '0.1.1'
+puppet module install puppetlabs-reboot --version 2.4.0
 #mod 'support_tasks',
  # :git => 'https://github.com/MartyEwings/support-tasks.git'
 
