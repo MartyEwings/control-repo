@@ -5,13 +5,13 @@ defaults:
   datadir: "data"
 
 hierarchy:
-  - name: "YAML Backend"
+  - name: "PROD Master server Data"
     data_hash: yaml_data
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - 'common.yaml'
   
-  - name: "CAMELS Backend"
+  - name: "LAB Master server Data"
     data_hash: yaml_data
     paths:
       - "nodes/%{trusted.certname}.yaml"
