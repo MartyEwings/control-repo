@@ -26,8 +26,8 @@ mod 'martyewings-agent_run_with_tags', '1.0.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
 mod 'martyewings-add_hosts_entry', '0.1.1'
 mod 'puppetlabs-reboot', '2.4.0'
-#mod 'support_tasks',
- # :git => 'https://github.com/MartyEwings/support-tasks.git'
+mod 'puppetie',
+  :git => 'https://github.com/jasy125/puppetie.git'
 
 
 # home automation
