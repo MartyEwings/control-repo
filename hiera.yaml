@@ -10,9 +10,4 @@ hierarchy:
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - 'common.yaml'
-  
-  - name: "LAB Master server Data"
-    data_hash: yaml_data
-    paths:
-      - "nodes/%{trusted.certname}.yaml"
-      - 'common.yaml'
+
