@@ -5,7 +5,7 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile',     '2.2.1'
 #mod 'puppetlabs/stdlib',      '5.0.0'
 # modules for workstation and development laptop setup
-mod 'abuxton/pdk' :latest#latest
+mod 'abuxton/pdk', :latest#latest
 mod 'puppetlabs-stdlib', :latest
 mod 'puppetlabs/resource_api' #
 mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
