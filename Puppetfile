@@ -20,7 +20,7 @@ mod 'puppetlabs-apache', '5.3.0'
 mod 'puppetlabs-puppet_agent', :latest
 
 #Support Stuff
-mod 'puppetlabs-support_tasks' :latest
+mod 'puppetlabs-support_tasks', :latest
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
