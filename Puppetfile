@@ -5,21 +5,22 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile',     '2.2.1'
 #mod 'puppetlabs/stdlib',      '5.0.0'
 # modules for workstation and development laptop setup
-mod 'abuxton/pdk' #latest
-mod 'puppetlabs-stdlib'#, '4.13.1' #install latest
+mod 'abuxton/pdk' :latest#latest
+mod 'puppetlabs-stdlib', :latest
 mod 'puppetlabs/resource_api' #
 mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
 #cd4pe and dependencies
 mod 'puppetlabs/cd4pe', :latest
-mod 'puppetlabs-concat', '5.3.0'
+mod 'puppetlabs-concat', :latest
 mod 'puppetlabs-docker', '3.4.0'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-translate', '1.2.0'
 mod 'puppetlabs-apache', '5.3.0'
+mod 'puppetlabs-puppet_agent', :latest
 
 #Support Stuff
-mod 'puppetlabs-support_tasks'
+mod 'puppetlabs-support_tasks' :latest
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
@@ -38,7 +39,6 @@ mod 'puppetlabs-reboot', '2.4.0'
 # environment tools
 #mod 'ccin2p3-bolt', '0.2.0' #no osx support so usefull for master Setup
 mod 'puppetlabs-bootstrap' #install PE agents with Bolt
-mod 'puppetlabs-puppet_agent' #manage and upgrade agents
 mod 'WhatsARanjit-node_manager' #manage classification groups
 
 # Modules from Git
