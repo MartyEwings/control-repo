@@ -29,7 +29,7 @@ mod 'puppetlabs-reboot', '2.4.0'
 mod 'puppetie',
   :git => 'https://github.com/jasy125/puppetie.git'
 mod 'support_tasks',
-  :git => 'https://github.com/MartyEwings/support-tasks,
+  :git => 'https://github.com/MartyEwings/support-tasks',
 
 # home automation
 #mod 'tphoney-simple_hue', '0.2.0'
