@@ -20,7 +20,7 @@ mod 'puppetlabs-apache', '5.3.0'
 mod 'puppetlabs-puppet_agent', :latest
 
 #Support Stuff
-mod 'puppetlabs-support_tasks', :latest
+#mod 'puppetlabs-support_tasks', :latest
 mod 'martyewings-agent_service_controller_tasks', '1.0.0'
 mod 'martyewings-agent_run_with_tags', '1.0.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
@@ -28,7 +28,8 @@ mod 'martyewings-add_hosts_entry', '0.1.1'
 mod 'puppetlabs-reboot', '2.4.0'
 mod 'puppetie',
   :git => 'https://github.com/jasy125/puppetie.git'
-
+mod 'support_tasks',
+  :git => 'https://github.com/MartyEwings/support-tasks,
 
 # home automation
 #mod 'tphoney-simple_hue', '0.2.0'
