@@ -23,7 +23,7 @@ mod 'puppetie',
   :git => 'https://github.com/jasy125/puppetie.git'
 mod 'support_tasks',
   :git => 'https://github.com/MartyEwings/support-tasks'
-mod 'groundcontrol_pi',
+mod 'groundcontrol',
   :git => 'https://github.com/MartyEwings/groundcontrol_pi'
 
 
