@@ -5,18 +5,11 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile',     '2.2.1'
 #mod 'puppetlabs/stdlib',      '5.0.0'
 # modules for workstation and development laptop setup
-mod 'abuxton/pdk', :latest#latest
 mod 'puppetlabs-stdlib', :latest
 mod 'puppetlabs/resource_api' #
 mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
-#cd4pe and dependencies
-mod 'puppetlabs/cd4pe', :latest
-mod 'puppetlabs-concat', :latest
-mod 'puppetlabs-docker', '3.4.0'
-mod 'puppetlabs-puppet_authorization', '0.5.0'
-mod 'puppetlabs-hocon', '1.0.1'
-mod 'puppetlabs-translate', '1.2.0'
-mod 'puppetlabs-apache', '5.3.0'
+mod 'puppet-archive', '4.4.0'
+mod 'puppetlabs-puppet_conf', '0.6.0'
 mod 'puppetlabs-puppet_agent', :latest
 
 #Support Stuff
@@ -30,7 +23,6 @@ mod 'puppetie',
   :git => 'https://github.com/jasy125/puppetie.git'
 mod 'support_tasks',
   :git => 'https://github.com/MartyEwings/support-tasks'
-
 mod 'groundcontrol_pi',
   :git => 'https://github.com/MartyEwings/groundcontrol_pi'
 
@@ -61,5 +53,3 @@ mod 'puppetlabs-inifile', '2.5.0'
 #mod 'adviser',
 #  :git => 'git@github.com:puppetlabs/prosvc-adviser.git'
 
-mod 'azure_key_vault',
-  :git => 'https://github.com/TraGicCode/tragiccode-azure_key_vault'
