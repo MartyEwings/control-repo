@@ -25,7 +25,8 @@ mod 'support_tasks',
   :git => 'https://github.com/MartyEwings/support-tasks'
 mod 'groundcontrol',
   :git => 'https://github.com/MartyEwings/groundcontrol_pi'
-
+mod 'ca_expiry_check',
+  :git => 'https://github.com/MartyEwings/ca_expiry_check.git'
 
 # home automation
 #mod 'tphoney-simple_hue', '0.2.0'
