@@ -11,6 +11,7 @@ mod 'puppetlabs-puppetserver_gem' #dep. puppetlabs/resource_api
 mod 'puppet-archive', '4.4.0'
 mod 'puppetlabs-puppet_conf', '0.6.0'
 mod 'puppetlabs-puppet_agent', :latest
+mod 'puppetlabs-pe_quick_data', '1.1.0'
 
 #Support Stuff
 #mod 'puppetlabs-support_tasks', :latest
