@@ -31,7 +31,7 @@ node default {
   #   class { 'my_class': }
 }
 
-  node  pe-201922-master.puppetdebug.vlan {
+  node  'pe-201922-master.puppetdebug.vlan' {
     class { '::nfs':
       server_enabled => true
     }
@@ -44,7 +44,7 @@ node default {
     }
    } 
     
-    node remotemonitoringnode.platform9.puppet.net {
+    node 'remotemonitoringnode.platform9.puppet.net' {
     class { '::nfs':
       client_enabled => true,
     }
