@@ -35,9 +35,7 @@ node default {
     class { '::nfs':
       server_enabled => true
     }
-    
-    
-    { '/var/log/puppetlabs/':
+    nfs::server::export{ '/var/log/puppetlabs/':
       ensure  => 'mounted',
       clients => '192.168.0.10(r,insecure,async,no_root_squash) localhost(r)',
       mount   => '/root/masterlogs',
