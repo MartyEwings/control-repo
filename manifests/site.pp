@@ -42,6 +42,7 @@ node default {
       clients => '192.168.0.10(r,insecure,async,no_root_squash) localhost(r)'
       mount   => '/root/masterlogs',
     }
+   } 
     
     node remotemonitoringnode.platform9.puppet.net {
     class { '::nfs':
