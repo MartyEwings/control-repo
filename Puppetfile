@@ -15,6 +15,10 @@ mod 'puppetlabs-pe_quick_data', '1.1.0'
 mod 'puppetlabs-rsync', '1.1.1'
 mod 'puppetlabs-xinetd', '3.3.0'
 mod 'puppetlabs-concat', '6.2.0'
+mod 'derdanne-nfs', '2.1.5'
+mod 'herculesteam-augeasproviders_core', '2.6.0'
+mod 'herculesteam-augeasproviders_shellvar', '4.0.0'
+mod 'puppetlabs-transition', '0.1.3'
 
 #Support Stuff
 #mod 'puppetlabs-support_tasks', :latest
