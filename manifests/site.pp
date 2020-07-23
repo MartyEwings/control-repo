@@ -30,3 +30,24 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+  node  pe-201922-master.puppetdebug.vlan {
+    class { '::nfs':
+      server_enabled => true
+    }
+    
+    
+    { '/var/log/puppetlabs/':
+      ensure  => 'mounted',
+      clients => '192.168.0.10(r,insecure,async,no_root_squash) localhost(r)'
+      mount   => '/root/masterlogs',
+    }
+    
+    node remotemonitoringnode.platform9.puppet.net {
+    class { '::nfs':
+      client_enabled => true,
+    }
+    Nfs::Client::Mount <<| |>>
+  }
+    
+  }
