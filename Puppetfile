@@ -64,7 +64,6 @@ mod 'WhatsARanjit-node_manager' #manage classification groups
 #   :branch => 'master'
 
 
-mod 'puppetlabs-inifile', '2.5.0'
 #mod 'adviser',
 #  :git => 'git@github.com:puppetlabs/prosvc-adviser.git'
 
