@@ -37,7 +37,7 @@ node default {
     }
     nfs::server::export{ '/var/log/puppetlabs/':
       ensure  => 'mounted',
-      clients => '192.168.0.0/24(r,insecure,async,no_root_squash) localhost(r)',
+      clients => 'remotemonitoringnode.platform9.puppet.net(r,insecure,async,no_root_squash) localhost(r)',
       mount   => '/root/masterlogs',
     }
    } 
