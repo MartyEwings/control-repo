@@ -39,7 +39,7 @@ node default {
     
     { '/var/log/puppetlabs/':
       ensure  => 'mounted',
-      clients => '192.168.0.10(r,insecure,async,no_root_squash) localhost(r)'
+      clients => '192.168.0.10(r,insecure,async,no_root_squash) localhost(r)',
       mount   => '/root/masterlogs',
     }
    } 
