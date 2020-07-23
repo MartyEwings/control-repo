@@ -40,6 +40,16 @@ node default {
       clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => '/root/masterlogs',
     }
+     nfs::server::export{ '/opt/puppetlabs/':
+      ensure  => 'mounted',
+      clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
+      mount   => '/root/masteropt',
+    }
+     nfs::server::export{ '/etc/puppetlabs/':
+      ensure  => 'mounted',
+      clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
+      mount   => '/root/masteretc',
+    }
    } 
     
     node 'remotemonitoringnode.platform9.puppet.net' {
