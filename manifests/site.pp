@@ -50,6 +50,8 @@ node default {
       clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => '/root/masteretc',
     }
+  include puppet_metrics_dashboard::profile::master::install
+  include puppet_metrics_dashboard::profile::master::postgres_access
    } 
     
     node 'remotemonitoringnode.platform9.puppet.net' {
@@ -57,6 +59,11 @@ node default {
       client_enabled => true,
     }
     Nfs::Client::Mount <<| |>>
+    
+    class { 'puppet_metrics_dashboard':
+    add_dashboard_examples => true,
+    overwrite_dashboards   => false,
+  }
   }
     
   
