@@ -52,6 +52,9 @@ node default {
     }
   include puppet_metrics_dashboard::profile::master::install
   include puppet_metrics_dashboard::profile::master::postgres_access
+    
+    class { 'puppet_metrics_dashboard::profile::master::postgres_access':
+    telegraf_host => 'remotemonitoringnode.platform9.puppet.net',
    } 
     
     node 'remotemonitoringnode.platform9.puppet.net' {
