@@ -50,11 +50,7 @@ node default {
       clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => '/root/masteretc',
     }
-  include puppet_metrics_dashboard::profile::master::install
-    
-    class { 'puppet_metrics_dashboard::profile::master::postgres_access':
-    telegraf_host => 'remotemonitoringnode.platform9.puppet.net',
-   } 
+  include puppet_metrics_dashboard::profile::master::install 
    }
     
     node 'remotemonitoringnode.platform9.puppet.net' {
