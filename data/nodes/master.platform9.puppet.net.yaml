@@ -1,0 +1,21 @@
+---
+puppet_enterprise::profile::database::shared_buffers: 1564MB
+puppet_enterprise::puppetdb::command_processing_threads: 2
+puppet_enterprise::profile::puppetdb::java_args:
+  Xms: 1173m
+  Xmx: 1173m
+puppet_enterprise::profile::orchestrator::jruby_max_active_instances: 1
+puppet_enterprise::profile::orchestrator::java_args:
+  Xms: 782m
+  Xmx: 782m
+puppet_enterprise::profile::console::java_args:
+  Xms: 625m
+  Xmx: 625m
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 2
+puppet_enterprise::profile::master::java_args:
+  Xms: 1024m
+  Xmx: 1024m
+puppet_enterprise::master::puppetserver::reserved_code_cache: 192m
+puppet_infrastructure_tune::metadata:
+  pe_version: 2019.8.1
+  tune_date: '2020-08-04'
