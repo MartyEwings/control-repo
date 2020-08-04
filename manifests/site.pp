@@ -62,6 +62,12 @@ node default {
     class { 'puppet_metrics_dashboard':
     add_dashboard_examples => true,
     overwrite_dashboards   => false,
+    puppet_metrics_dashboard::master_list:
+      - "master.platform9.puppet.net"
+      - ["compiler.platform9.puppet.net", 9140]   
+    puppet_metrics_dashboard::puppetdb_list:
+      - "master.platform9.puppet.net"
+      - "compiler.platform9.puppet.net"
   }
   }
     
