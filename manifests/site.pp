@@ -31,7 +31,7 @@ node default {
   #   class { 'my_class': }
 }
 
-  node  'pe-201922-master.puppetdebug.vlan' {
+  node  'master.platform9.puppet.net' {
     class { '::nfs':
       server_enabled => true
     }
