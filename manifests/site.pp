@@ -37,17 +37,17 @@ node default {
     }
     nfs::server::export{ '/var/log/':
       ensure  => 'mounted',
-      clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
+      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => "/var/pesupport/$fqdn/log",
     }
      nfs::server::export{ '/opt/puppetlabs/':
       ensure  => 'mounted',
-      clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
+      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => "/var/pesupport/$fqdn/opt",
     }
      nfs::server::export{ '/etc/puppetlabs/':
       ensure  => 'mounted',
-      clients => '192.168.0.10(ro,insecure,async,no_root_squash) localhost(ro)',
+      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
       mount   => "/var/pesupport/$fqdn/etc",
     }
   include puppet_metrics_dashboard::profile::master::install 
