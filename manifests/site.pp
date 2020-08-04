@@ -53,7 +53,7 @@ node default {
   include puppet_metrics_dashboard::profile::master::install 
    }
     
-    node 'remotemonitoringnode.platform9.puppet.net' {
+    node 'remotesupportnode.platform9.puppet.net' {
     class { '::nfs':
       client_enabled => true,
     }
