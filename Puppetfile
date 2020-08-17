@@ -43,6 +43,8 @@ mod 'groundcontrol',
   :git => 'https://github.com/MartyEwings/groundcontrol_pi'
 mod 'ca_expiry_check',
   :git => 'https://github.com/MartyEwings/ca_expiry_check.git'
+mod 'rsan',
+  :git => 'https://github.com/MartyEwings/RSAN.git'
 
 # home automation
 #mod 'tphoney-simple_hue', '0.2.0'
@@ -57,10 +59,6 @@ mod 'WhatsARanjit-node_manager' #manage classification groups
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
-#mod 'apache',
-#  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
-#  :commit => 'de290646f97e04b4b8e42c70f6e01e860c394ce7'
-
 #mod 'test',
 #   :git    => '/etc/puppetlabs/code-test/modules/test',
 #   :branch => 'master'
