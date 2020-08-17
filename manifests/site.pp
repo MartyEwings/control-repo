@@ -31,63 +31,63 @@ node default {
   #   class { 'my_class': }
 }
 
-  node  'master.platform9.puppet.net' {
-    class { '::nfs':
-      server_enabled => true
-    }
-    nfs::server::export{ '/var/log/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/log",
-    }
-     nfs::server::export{ '/opt/puppetlabs/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/opt",
-    }
-     nfs::server::export{ '/etc/puppetlabs/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/etc",
-    }
-  include puppet_metrics_dashboard::profile::master::install 
-   }
+ # node  'master.platform9.puppet.net' {
+  #  class { '::nfs':
+   #   server_enabled => true
+   # }
+   # nfs::server::export{ '/var/log/':
+    #  ensure  => 'mounted',
+     # clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+      #mount   => "/var/pesupport/$fqdn/log",
+#    }
+ #    nfs::server::export{ '/opt/puppetlabs/':
+  #    ensure  => 'mounted',
+   #   clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+    #  mount   => "/var/pesupport/$fqdn/opt",
+    #}
+#     nfs::server::export{ '/etc/puppetlabs/':
+ #     ensure  => 'mounted',
+  #    clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+   #   mount   => "/var/pesupport/$fqdn/etc",
+    v}
+ # include puppet_metrics_dashboard::profile::master::install 
+  # }
     
-    node 'remotesupportnode.platform9.puppet.net' {
-    class { '::nfs':
-      client_enabled => true,
-    }
-    Nfs::Client::Mount <<| |>>
+   # node 'remotesupportnode.platform9.puppet.net' {
+    #class { '::nfs':
+     # client_enabled => true,
+   # }
+    #Nfs::Client::Mount <<| |>>
     
-    class { 'puppet_metrics_dashboard':
-    add_dashboard_examples => true,
-    overwrite_dashboards   => false,
-    configure_telegraf     => true,
-    enable_telegraf        => true,
-    master_list            => ['master.platform9.puppet.net', ['compiler.platform9.puppet.net', 9140]],
-    puppetdb_list          => ['master.platform9.puppet.net', 'compiler.platform9.puppet.net'],
-    postgres_host_list     => ['master.platform9.puppet.net'],
-  }
-  }
+    #class { 'puppet_metrics_dashboard':
+    #add_dashboard_examples => true,
+    #overwrite_dashboards   => false,
+    #configure_telegraf     => true,
+    #enable_telegraf        => true,
+    #master_list            => ['master.platform9.puppet.net', ['compiler.platform9.puppet.net', 9140]],
+    #puppetdb_list          => ['master.platform9.puppet.net', 'compiler.platform9.puppet.net'],
+    #postgres_host_list     => ['master.platform9.puppet.net'],
+  #}
+  #}
     
   
-node  'compiler.platform9.puppet.net' {
-    class { '::nfs':
-      server_enabled => true
-    }
-    nfs::server::export{ '/var/log/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/log",
-    }
-     nfs::server::export{ '/opt/puppetlabs/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/opt",
-    }
-     nfs::server::export{ '/etc/puppetlabs/':
-      ensure  => 'mounted',
-      clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
-      mount   => "/var/pesupport/$fqdn/etc",
-    }
-   }
+#node  'compiler.platform9.puppet.net' {
+ #   class { '::nfs':
+#      server_enabled => true
+ #   }
+  #  nfs::server::export{ '/var/log/':
+   #   ensure  => 'mounted',
+    #  clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+     # mount   => "/var/pesupport/$fqdn/log",
+   # }
+    # nfs::server::export{ '/opt/puppetlabs/':
+     # ensure  => 'mounted',
+      #clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+      #mount   => "/var/pesupport/$fqdn/opt",
+    #}
+     #nfs::server::export{ '/etc/puppetlabs/':
+      #ensure  => 'mounted',
+      #clients => '192.168.0.20(ro,insecure,async,no_root_squash) localhost(ro)',
+     # mount   => "/var/pesupport/$fqdn/etc",
+    #}
+   #}
