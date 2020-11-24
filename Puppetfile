@@ -26,6 +26,7 @@ mod 'puppetlabs-apt', '7.4.2'
 mod 'puppetlabs-inifile', '4.2.0'
 mod 'puppetlabs-puppet_metrics_collector', '6.1.0'
 mod 'puppetlabs-postgresql', '6.6.0'
+mod 'puppet-openvpn', '8.3.0'
 
 
 #Support Stuff
