@@ -47,6 +47,8 @@ mod 'ca_expiry_check',
   :git => 'https://github.com/MartyEwings/ca_expiry_check.git'
 mod 'rsan',
   :git => 'https://github.com/MartyEwings/RSAN.git'
+  :branch => 'metricfeature'
+
 
 # home automation
 #mod 'tphoney-simple_hue', '0.2.0'
