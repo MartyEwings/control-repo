@@ -46,7 +46,7 @@ mod 'groundcontrol',
 mod 'ca_expiry_check',
   :git => 'https://github.com/MartyEwings/ca_expiry_check.git'
 mod 'rsan',
-  :git => 'https://github.com/MartyEwings/RSAN.git'
+  :git => 'https://github.com/MartyEwings/RSAN.git',
   :branch => 'metricfeature'
 
 
