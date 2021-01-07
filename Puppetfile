@@ -47,7 +47,7 @@ mod 'ca_expiry_check',
   :git => 'https://github.com/MartyEwings/ca_expiry_check.git'
 mod 'rsan',
   :git => 'https://github.com/MartyEwings/RSAN.git',
-  :branch => 'morgan-lillie'
+  :branch => 'jameslanepuppet'
 
 
 # home automation
