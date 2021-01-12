@@ -19,9 +19,9 @@ mod 'derdanne-nfs', '2.1.5'
 mod 'herculesteam-augeasproviders_core', '2.6.0'
 mod 'herculesteam-augeasproviders_shellvar', '4.0.0'
 mod 'puppetlabs-transition', '0.1.3'
-mod 'puppetlabs-puppet_metrics_dashboard', '2.3.0'
-mod 'puppet-grafana', '6.1.0'
-mod 'puppet-telegraf', '3.0.0'
+mod 'puppetlabs-puppet_metrics_dashboard', :latest
+mod 'puppet-grafana', :latest
+mod 'puppet-telegraf', :latest
 mod 'puppetlabs-apt', '7.4.2'
 mod 'puppetlabs-inifile', '4.2.0'
 mod 'puppetlabs-puppet_metrics_collector', '6.1.0'
